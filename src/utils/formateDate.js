@@ -1,0 +1,19 @@
+const date = (date) => {
+
+  const d = new Date(date);
+  let month = `${d.getMonth() + 1}`;
+  let day = `${d.getDate()}`;
+  const year = d.getFullYear();
+
+  if (month.length < 2) { //1-jan -> 01-jan
+    month = `0${month}`;
+  }
+
+  if (day.length < 2) {
+    day = `0${day}`;
+  }
+
+  return [day, month, year].join("-");
+};
+
+export default date;
