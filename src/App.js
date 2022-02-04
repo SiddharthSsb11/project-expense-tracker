@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
+import './index.css'
 
 function App() {
   return (
-    <div className="App">
-      <h2>Expense tracker</h2>
+    <div>
+      <h2>.</h2>
     </div>
   );
 }
